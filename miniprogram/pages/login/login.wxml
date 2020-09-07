@@ -1,0 +1,9 @@
+<view class="container">
+  <image class="logo" src="../../imgs/logo.jpg" mode="aspectFit" lazy-load="false" binderror="" bindload="" />
+  <view class="line"></view>
+  <view class="desc">
+    <view class="">申请获取以下权限</view>
+    <view class="">获得你的公开信息（昵称，头像等）</view>
+  </view>
+  <button class="loginBtn" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+</view>

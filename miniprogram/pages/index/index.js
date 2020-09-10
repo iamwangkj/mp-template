@@ -10,26 +10,26 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   // 事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     this.useCloudFunc()
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
 
-  useCloudFunc() {
+  useCloudFunc () {
     wx.cloud.callFunction({
       name: 'login',
-      success(res) {
+      success (res) {
         console.log('提交成功', res)
       },
-      fail(res) {
+      fail (res) {
         console.log('提交失败', res)
       }
     })
   },
 
-  onLoad: function() {
+  onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -57,7 +57,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({

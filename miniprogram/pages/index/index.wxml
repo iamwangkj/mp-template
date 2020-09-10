@@ -1,13 +1,11 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+  <!-- <image class="pic" src="https://wxt.sinaimg.cn/mw1024/5cce1673ly1gik9cdmk0nj20u011iaha.jpg" mode="widthFix" lazy-load="true" /> -->
+  <image class="pic" src="https://gank.io/images/f4f6d68bf30147e1bdd4ddbc6ad7c2a2" mode="widthFix" lazy-load="true" />
+  <image class="pic" src="" mode="widthFix" lazy-load="true" />
+  <image class="pic" src="" mode="widthFix" lazy-load="true" />
+  <image class="pic" src="" mode="widthFix" lazy-load="true" />
+    
+    
+  
 </view>

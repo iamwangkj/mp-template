@@ -1,6 +1,7 @@
-.container {
-  box-sizing: border-box;
-  padding: 150rpx 40rpx 0 40rpx;
+.page-login {
+  width: 670rpx;
+  margin: 0 auto;
+  padding-top: 150rpx;
 }
 
 .logo {

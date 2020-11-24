@@ -1,4 +1,4 @@
-<view class="container">
+<view class="page-login">
   <image class="logo" src="../../imgs/logo.jpg" mode="aspectFit" lazy-load="false" binderror="" bindload="" />
   <view class="line"></view>
   <view class="desc">

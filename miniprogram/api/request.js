@@ -1,17 +1,18 @@
-const BASE_URL = 'https://api.cheertrue.com'
+const BASE_URL = ''
 
-const request = (opt) => {
+function request (opt) {
+  opt.url = /http/ig.test(opt.url) ? opt.url : `${BASE_URL}/${opt.url}`
   return new Promise((resolve, reject) => {
-    const opts = Object.assign({
+    wx.request(Object.assign({
+      method: 'GET',
       url: '',
       data: null,
       header: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
       },
       // timeout: 5000,
-      method: 'GET',
       success (res) {
-        resolve(res)
+        resolve(res.data)
       },
       fail (err) {
         wx.showToast({
@@ -22,8 +23,7 @@ const request = (opt) => {
         })
         reject(err)
       }
-    }, opt)
-    wx.request(opts)
+    }, opt))
   })
 }
 

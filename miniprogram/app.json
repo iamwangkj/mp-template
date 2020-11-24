@@ -10,21 +10,21 @@
     "van-checkbox-group": "@vant/weapp/checkbox-group/index"
   },
   "tabBar": {
-    "color": "#d3d3d3",
-    "selectedColor": "#000",
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
     "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "/imgs/tab-icon-home.png",
+        "selectedIconPath": "/imgs/tab-icon-home-active.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "/imgs/tab-icon-me.png",
+        "selectedIconPath": "/imgs/tab-icon-me-active.png"
       }
     ]
   },

@@ -1,2 +1,5 @@
-<!--miniprogram/pages/me/me.wxml-->
-<text>miniprogram/pages/me/me.wxml</text>
+<view>
+  <image class="" src="{{avatarUrl}}" mode="widthFix" />
+  <text class="" selectable="false" space="false" decode="false">{{nickName}}</text>
+    
+</view>  
